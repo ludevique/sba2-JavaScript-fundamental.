@@ -1,5 +1,13 @@
 // Javascript fundamental SBA.
   //  
+  ////task to do :
+  //1-create a function and pass parameters inside:
+    //-CourseInfo,
+    //AssignmentGroup
+    //the third one should be an array of [learnerSubmission]
+
+    //2-target
+       //return the formatted result which should be an array of different objects listed above
 
 
 
@@ -83,10 +91,17 @@ const CourseInfo = {
       }
     }
   ];
+
+
+   //---------------------------------------------
+  //Start our work here.
+  
+
+//  declare the function that contain our code and validate the data. 
   
   function getLearnerData(course, ag, submissions) {
     try {
-      // Validate input
+      // Validate data 
       if (!course || !ag || !submissions || !Array.isArray(submissions)) {
         throw new Error('Invalid input data');
       }
